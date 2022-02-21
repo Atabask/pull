@@ -31,7 +31,7 @@ module.exports = {
             filename: 'main.[contenthash].css'
         }),
 
-        new HtmlWebpackPlugin ({
+        new HtmlPlugin ({
             template: resolve(__dirname, 'index.html')
         }),
 

@@ -4,7 +4,7 @@ import "./utils/getTimer.js";
 
 // import music from "../audio/audio.mp3"
 
-import "../css/main.css"
+// import "../css/main.css"
 
 document.addEventListener('click', function(event) {
     let id = event.target.dataset.toggleId;
