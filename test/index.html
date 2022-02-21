@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор дат</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/libs/howler.core.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+<script defer src="main.8f8d18c625dd2151b3d6.js"></script><link href="main.965d00b291822fdb4a52.css" rel="stylesheet"></head>
+<body>
+    <div class="container">
+        <button type="button" class="date-diff-btn" data-toggle-id="calcdrop">Калькулятор</button>
+            <div class="datediff" id="calcdrop" hidden>
+                <h2>Калькулятор дат</h2>
+                <form id="calcDate" >
+                    <label for="dateFrom">
+                        Первая дата :
+                        <input type="date" name="dateFrom" id="dateFrom">
+                    </label>
+                    <label for="dateTo">
+                        Вторая дата :
+                        <input type="date" name="dateTo" id="dateTo">
+                    </label>
+                    <button type="submit">Рассчитать промежуток</button>
+                </form>
+                <p id="output">
+                </p>
+            </div>
+            
+        <button type="button" class="timer-btn" data-toggle-id="timerDrop">Таймер</button>
+        <div class="timer" id="timerDrop" hidden>
+            <div class="cont-timer">
+                <h2>Таймер</h2>
+                <input type="number" id="timer" value="4">
+                <button type="submit" class="start-btn" id="startBtn" onClick="startTimer()">Запуск</button>
+                <button type="reset" class="resetBtn" id="resetBtn"  onClick="stopTimer()">Стоп</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
